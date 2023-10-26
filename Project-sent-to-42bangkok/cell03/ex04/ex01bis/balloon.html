@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luv luv</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+
+        // changecolor
+
+        function changecolor() {
+                const color = $("#display").css("background-color");
+                if (color == "rgb(255, 0, 0)" || color == ""){
+                    $("#display").css("background-color","rgb(0, 128, 32)")
+                }
+                else if(color == "rgb(0, 128, 32)"){
+                    $("#display").css("background-color","rgb(0, 0, 255)");
+                }
+                else if(color == "rgb(0, 0, 255)"){
+                    $("#display").css("background-color","rgb(255, 0, 0)");
+                } 
+            }
+        $(document).ready(function(){
+
+            // adddisplay
+
+            jQuery('<div>',{
+                id:"display"
+            }).appendTo("body");
+            $("#display").css({
+                "background-color":"red",
+                "width" : 200 + "px",
+                "height" : 200 + "px",
+                "border-radius" : "100%",
+                "cursor" : "pointer"
+            });
+
+            // addfunction
+
+            $("#display").click(function(){
+                const width = $("#display").width();
+                const height = $("#display").height();
+                changecolor();
+                if (width < 420 && height < 420){
+                    $("#display").css({
+                        height : width + 10 + "px",
+                        width : height + 10 + "px"
+                    });
+                }
+                else {
+                    $("#display").css({
+                        height : 200 + "px",
+                        width : 200 + "px",
+                    });
+                }
+            });
+            $("#display").mouseleave(function(){
+                const width = $("#display").width();
+                const height = $("#display").height();
+                changecolor();
+                if (width > 200 && height > 200){
+                    $("#display").css({
+                        height : width - 5 + "px",
+                        width : height - 5 + "px"
+                    });
+                }
+                else {
+                    $("#display").css({
+                        height : 200 + "px",
+                        width : 200 + "px",
+                    });
+                }
+            })
+            
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

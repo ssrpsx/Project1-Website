@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>natampon</title>
+    <link rel="stylesheet" href="natampon.css">
+</head>
+<body>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- navbar -->
+    <header class="all">
+
+        <div class="logo">natampon</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+    <!-- home -->
+    <section id="home">
+        <div class="h">
+            <p class="text">My Portfolio</p>
+        </div>
+    </section>
+
+    <!--profile-->
+    <section id="profile">
+        <div class="profile">
+            <p class="pft">P R O F I L E</p>
+            <div class="tp">
+                <div class="content">
+                    <span class="headtext">Hello , 你好 , สวัสดี...</span>
+                    <h3 class="iam">I AM <span class="nat">NATCHAYA</span></h3>
+            
+                    <div class="explain">
+                    <p>Name : Natchaya Tampong &nbsp; /// &nbsp; Nickname : Ice </p>
+                    <p>Birthday : 10 October 2005 &nbsp; /// &nbsp; Age : 17 years old</p>
+                        <p>Race : Thai &nbsp; /// &nbsp; Nationally : Thai</p>
+                    <p>Hobbies : Cover Dance , Cosplay , Play guitar , Play sport</p>
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <img src="https://cdn.discordapp.com/attachments/913070725127082095/1090513479854723072/IMG_9631.png" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--skill-->
+    <section id="skill">
+        <h1 class="st">S k i l l</h1>
+        <div class="row">
+
+            <div class="box">
+                <ion-icon class="icon" name="basketball-outline"></ion-icon>
+                <h1 class="headings">SPORT</h1>
+                <p>
+                    <center>
+                    > Playing basketball since 4th grade <  <br><br>
+                    > Learned Taekwondo to the Blue Brlt level <  <br><br>
+                    > Been skating for almost two years <  
+                    </center>
+                </p>
+            </div>
+
+            <div class="box">
+                <ion-icon class="icon" name="musical-notes-outline"></ion-icon>
+                <h1 class="headings">MUSIC</h1>
+                <p>
+                    <center>
+                    Instruments that can be played such as  <br><br>
+                    > Guitar <  <br><br>
+                    > Violin <  <br><br>
+                    > Alto bamboo xylophone <   
+                    </center>
+                </p>
+            </div>
+
+            <div class="box">
+                <ion-icon class="icon" name="sparkles-outline"></ion-icon>
+                <h1 class="headings">OTHER</h1>
+                <p>
+                    <center>
+                    > Dance <  <br><br>
+                    > Python <  <br><br>
+                    > Html <  <br><br>
+                    > CSS <  <br><br>
+                    </center>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="contact">
+    <center>
+        <div class="ct">
+            <h1 class="cttext">C o n t a c t &nbsp; ME</h1>
+        </div>
+
+        <div class="icon">
+            <a href="https://www.facebook.com/natchaya.tampong/">
+                <ion-icon class="iconone" name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="https://instagram.com/__xoxoiyen?igshid=YmMyMTA2M2Y=">
+                <ion-icon class="iconone" name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="https://line.me/ti/p/7qDh_ntRfk">
+                <ion-icon class="iconone" name="chatbubble-outline"></ion-icon>
+            </a>
+        </div>
+    </center>
+    <div class="ped">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWM3OTA5OGJlYTYyN2M3Njg1ZWJhNDg1MGU5ZWY1NmUwOGI0ZTk4MiZjdD1z/rtRflhLVzbNWU/giphy.gif" alt="">
+    </div>
+    </section>
+</body>
+</html>

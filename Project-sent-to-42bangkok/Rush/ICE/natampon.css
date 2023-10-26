@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Concert+One&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Alkatra', cursive; 
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3be68c87360871.5db61ca619f06.gif');
+    
+    height: 1000px;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* -------- navbar -------- */
+.all{
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    border: 1px solid gray;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background: #999999;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 400px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 15px;
+    }
+}
+
+/* -------- home -------- */
+.h .text{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    padding: 25%;
+}
+
+/* -------- profile -------- */
+.profile{
+    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/My-neighbor-totoro-wallpaper-backgrounds-for-Desktop-620x388.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+.pft{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    padding: 5%;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top: 5%;
+    max-width: 50%;
+
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    display: flex;
+    border-radius: 45%;
+    max-width: 60%;
+    max-height: 60%;
+
+}
+
+.headtext{
+    font-size: 20px;
+}
+
+.iam{
+    font-size: 60px;
+}
+
+.nat{
+    color: rgb(212, 0, 0);
+}
+
+.explain{
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+}
+
+.tp{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+
+    .tp{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    .photo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .photo img{
+        display: flex;
+        border-radius: 45%;
+        max-width: 40%;
+    }
+ } 
+
+/* -------- skill -------- */
+#skill{
+    background: url('https://c4.wallpaperflare.com/wallpaper/160/19/802/anime-my-neighbor-totoro-totoro-studio-ghibli-wallpaper-preview.jpg');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(102, 102, 102);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(152, 161, 165) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.st{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    padding: 5%;
+    color: white;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.headings{
+    margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+    #skill{
+        background: url('https://c4.wallpaperflare.com/wallpaper/160/19/802/anime-my-neighbor-totoro-totoro-studio-ghibli-wallpaper-preview.jpg');
+        width: 100%;
+        height: 1600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }     
+} 
+/* -------- contact -------- */
+#contact{
+    background-image: url('https://i.pinimg.com/originals/d7/a6/11/d7a61190a836bdcfc62bf97af4f4c74b.png');
+    
+    height: 100%s;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cttext{
+    font-size: 100px;
+    padding: 5%;
+    color: white;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon a {
+    color: white;
+    padding-left: 50px;
+}
+
+.iconone{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 130px;
+    color: white;
+}
+
+.ped img{
+    width: 250px;
+    height: 300px;
+    margin-top: 15%;
+}

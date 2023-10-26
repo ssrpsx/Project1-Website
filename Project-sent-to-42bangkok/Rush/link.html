@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SasTeam</title>
+    <link rel="stylesheet" href="link.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="narbar">
+            <ul>
+                <li><img id="imglogo" src="IMG/logo_white.png" alt=""></li>
+                <li><h1>DISCOVERY PISCINE</h1></li>
+                <div class="clock">
+                    <script>
+                        function displaytime(){
+                            var datatime = new Date();
+                            var hrs = datatime.getHours();
+                            var min = datatime.getMinutes();
+                            var sec = datatime.getSeconds();
+                            document.getElementById("hour").innerHTML = hrs;
+                            document.getElementById("minute").innerHTML = min;
+                            document.getElementById("sec").innerHTML = sec;
+                        }
+                    setInterval(displaytime,10);
+                    </script>
+                    <span id="hour">00</span>
+                    <span>:</span>
+                    <span id="minute">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </ul>
+        </div>
+        <div class="display">
+            <h1>Sas' Team</h1>
+            <a href="PHAI/Home.html"><img src="IMG/Phai.png"></a>
+            <a href="ICE/natampon.html"><img src="IMG/ice.png"></a>
+        </div>
+    </div>
+</body>
+</html>

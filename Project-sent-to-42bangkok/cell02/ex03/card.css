@@ -1,0 +1,52 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: Gill sans;
+}
+.headerh1 {
+    margin: 20px;
+    text-align: center;
+}
+.display {
+    box-shadow:0px 8px 8px rgba(0,0,0,0.5);
+    margin: auto;
+    text-align: center;
+    width: 250px;
+}
+.display img{
+    width: 250px;
+}
+.display h1{
+    margin:15px;
+}
+.display p{
+    font-size: 20px;
+    white-space: pre;
+    color: gray;
+}
+.display h2{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.display div a{
+    font-size: 25px;
+    margin: 5px;
+    color: black;
+}
+.btn button{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.display div a:hover{
+    color: rgb(0, 59, 253);
+}
+.btn button:hover{
+    background-color: rgb(0, 59, 253);
+}

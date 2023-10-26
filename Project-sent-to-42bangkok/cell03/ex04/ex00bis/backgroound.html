@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgorund Color Change</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            jQuery('<button>', {
+                id:"btn",
+                text:"Click me!"
+            }).appendTo("body");
+
+            //randomcolor
+
+            $("button#btn").click(function(){
+                let r = Math.round(Math.random() * 255);
+                let g = Math.round(Math.random() * 255);
+                let b = Math.round(Math.random() * 255);
+
+                // output
+
+                $("body").css("backgroundColor","rgb("+r+","+g+","+b+")")
+            })
+        })
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luv luv</title>
+</head>
+<body>
+    <div id="display" onclick="addpx()" onmouseout="removepx()"></div>
+    <style>
+        #display{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function changecolor(){
+            const color = document.getElementById("display").style.backgroundColor;
+            if (color == "red" || color == ""){
+                display.style.backgroundColor = "blue";
+            }
+            else if(color == "blue"){
+                display.style.backgroundColor = "green";
+            }
+            else if(color == "green"){
+                display.style.backgroundColor = "red";
+            }
+        }
+        function addpx(){
+            const width = document.getElementById("display").offsetWidth;
+            const height = document.getElementById("display").offsetHeight;
+            changecolor();
+            if (width < 420 && height < 420){
+                display.style.width = width + 10 + "px"
+                display.style.height = width + 10 + "px"
+            }
+            else if(width >= 420 && height >= 420){
+                display.style.width = 200 + "px"
+                display.style.height = 200 + "px"
+            }
+        }
+        function removepx(){
+            const width = document.getElementById("display").offsetWidth;
+            const height = document.getElementById("display").offsetHeight;
+            changecolor();
+            if (width > 200 && height > 200){
+                display.style.width = width - 5 + "px"
+                display.style.height = width - 5 + "px"
+            }
+            else if(width < 420 && height < 420){
+                display.style.width = 200 + "px"
+                display.style.height = 200 + "px"
+            }
+        }
+    </script>
+</body>
+</html>
